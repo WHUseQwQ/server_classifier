@@ -13,6 +13,7 @@ $ docker run -t --rm -p 8501:8501 -v "$(pwd)/resnet:/models/resnet" -e MODEL_NAM
 
 ## 使用
 发送post请求，格式如下
+
 POST http://127.0.0.1:8501/v1/models/resnet:predict HTTP/1.1
 
 {"instances" : [{"b64": "base64值"}]}
@@ -35,5 +36,4 @@ Response示例
 }
 ```
 
-286对应的label为Egyptian cat
-因此这张图片的识别结果为猫
+286对应的label为Egyptian cat，因此这张图片的识别结果为猫
