@@ -6,7 +6,7 @@
 ```sh
 $ docker pull tensorflow/serving
 
-$ cd /20200709
+$ cd /server_classifier
 
 $ docker run -t --rm -p 8501:8501 -v "$(pwd)/resnet:/models/resnet" -e MODEL_NAME=resnet tensorflow/serving
 ```
