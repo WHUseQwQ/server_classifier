@@ -1,1 +1,1 @@
-编号1为tenchi，编号1000为toilet tissue，以此类推
+编号0为background，编号1为tenchi，编号1000为toilet tissue，以此类推
