@@ -6,7 +6,7 @@
 
 
 
-宝塔面板的安装教程见https://www.bt.cn/bbs/thread-19376-1-1.html，安装好后，会给你登录网址和默认账号默认密码（此处注意提前放通8888端口以及你可能会用到的端口）
+宝塔面板的安装教程见https://www.bt.cn/bbs/thread-19376-1-1.html ，安装好后，会给你登录网址和默认账号默认密码（此处注意提前放通8888端口以及你可能会用到的端口）
 
 #### 2、安全性设置
 
@@ -47,4 +47,4 @@
 
 #### 7、测试
 
-至此，设置完成，你可以通过之前填写的域名访问TensorFlow Serving（Docker也要开着），推荐在https://www.sojson.com/http/test.html进行测试
+至此，设置完成，你可以通过之前填写的域名访问TensorFlow Serving（Docker也要开着），推荐在https://www.sojson.com/http/test.html 进行测试
