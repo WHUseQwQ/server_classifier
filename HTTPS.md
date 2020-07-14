@@ -36,7 +36,20 @@
         proxy_set_header Host 127.0.0.1:8501;
         proxy_pass http://127.0.0.1:8501;
         proxy_set_header Accept-Encoding "";
-
+        #使用网页端需要加上以下代码
+        if ($request_method = 'OPTIONS') {
+				add_header 'Access-Control-Allow-Origin' '*';
+				add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS';
+				add_header 'Access-Control-Allow-Headers' 'DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type';
+				add_header 'Access-Control-Max-Age' 1728000;
+				add_header 'Content-Type' 'text/plain charset=UTF-8';
+				add_header 'Content-Length' 0;
+				return 204;
+      	}
+        add_header Access-Control-Allow-Origin *;
+        add_header Access-Control-Allow-Headers X-Requested-With;
+        add_header Access-Control-Allow-Methods GET,POST,OPTIONS;
+        #使用网页端需要加上以上代码
         sub_filter "127.0.0.1:8501" "tf.example.com:81";
         sub_filter_once off;
         sub_filter_types *;
